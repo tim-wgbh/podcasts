@@ -2,7 +2,11 @@
 sites/*/settings*.php
 
 # Ignore paths that contain user-generated content.
-sites/*.wordsareimages.com
+sites/*.wordsareimages.com/files
+
+# This makes the above more specific
+sites/*.wordsareimages.com/settings.php
+sites/*.wordsareimages.com/tmp
 sites/sites.php
 
 robots.txt
