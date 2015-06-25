@@ -1,3 +1,3 @@
 <?php
-  drupal_add_js('/sites/culture_hub.wordsareimages.comv/themes/culture_hub/culture_hub.js');
+  drupal_add_js('/sites/culture_hub.wordsareimages.com/themes/culture_hub/culture_hub.js');
 ?>
