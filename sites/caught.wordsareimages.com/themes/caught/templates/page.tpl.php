@@ -74,7 +74,7 @@
  */
 ?>
 <header class="c-h-logo">
-  <img src="/sites/caught.dev/themes/caught/images/banner-logo.jpg" />
+  <img src="/sites/caught.wordsareimages.com/themes/caught/images/banner-logo.jpg" />
 </header>
 
 <div class="container">
