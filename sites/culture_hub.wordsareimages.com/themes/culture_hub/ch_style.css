@@ -175,12 +175,14 @@ header#page-header .region .content {
   position: relative;
   float: left;
   border: solid 1px black;
-  overflow: hidden;
   height: 220px;
 }
-.person img {
-  width: 100%;
-  overflow: hidden;
+.person .image {
+  height: 100%;
+  text-align:center;
+}
+.person .image img {
+  height: 100%;
 }
 .person .bio {
   text-align: right;
