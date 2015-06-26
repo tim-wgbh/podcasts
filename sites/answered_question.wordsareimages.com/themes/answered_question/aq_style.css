@@ -1,0 +1,200 @@
+body {
+  font-family: ambleregular;
+  background: #000 url(images/aq-staff-bg.png);
+  font-size: 16px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: ambleregular;
+  font-weight: normal;
+  font-size: 200%;
+}
+h2.title {
+  margin-bottom: 0;
+}
+a, a:visited {
+  color: #666;
+}
+a:hover {
+  color: #0c7c92;
+}
+.logo {
+  position: fixed;
+  padding: 10px 0;
+  width: 100%;
+  text-align:center;
+  z-index: 100;
+  min-height: 100px;
+  background: #000 url(images/banner-logo-background.jpg) no-repeat center center;
+  border-bottom: solid 2px #0c7c92;
+}
+.c-h-logo img {
+  max-width: 650px;
+}
+.c-h-logo span {
+  position: absolute;
+  color: #ccc;
+  left: 10px;
+  top: 2 em;
+}
+.click-target {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: red;
+  z-index: 80;
+  cursor: pointer;
+  background: transparent;
+}
+.episode {
+  position:relative;
+  margin-top: 30px;
+}
+.episode .audio-player {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 95;
+  text-align: center;
+  margin: 0 auto;
+  background-color: rgba(255,255,255, 0.7);
+}
+.episode .audio-player iframe {
+  width: 100%;
+}
+  
+.episode .audio-control {
+  position: absolute;
+  z-index: 95;
+  left:15%;
+  height: 60px;
+  width: 60px;
+}
+.episode .audio-control.listen {
+  background: url(images/audio-control.png) no-repeat -75px 0;
+  cursor: pointer;
+}
+.episode .audio-control.not-yet {
+  background: url(images/audio-control.png) no-repeat -225px 0;
+  cursor: normal;
+}
+.episode .audio-control.hide-audio {
+  background: url(images/audio-control.png) no-repeat 0 0;
+  cursor: pointer;
+}
+.episode .details {
+  float: right;
+  width: 73%;
+  padding-left: 1%;
+}
+.episode .image {
+  width: 25%;
+  float: left;
+}
+.episode .image img {
+  max-width: 100%;
+}
+.episode .summary {
+}
+.episode .title {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.veil {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 50;
+  background-color: rgba(0,0,0,0.6);
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.episode.not-yet .veil {
+  display: block;
+}
+header#page-header {
+  background-image:none;
+  margin: 0;
+  position: relative;
+}
+header#page-header .region {
+  padding: 0;
+}
+header#page-header .region .content {
+  text-transform: none;
+  margin-bottom: 0;
+  border-bottom: solid 3px black;
+}
+#page-header .views-field-body {
+  position: absolute;
+  right: 2%;
+  bottom: 2%;
+  font-weight: normal;
+  color: #ccc;
+  background-color: rgba(0,0,0, 1);
+  width: 60%;
+  z-index: 20;
+  text-align: left;
+  padding: 10px;
+  border-radius: 3px;
+  font
+}
+#page-header .views-field-title {
+  position: absolute;
+  left: 7%;
+  top: 20%;
+  color: #0c7c92;
+  text-shadow: 1px 1px 0px rgb(0,0,0);
+  z-index: 20;
+  font-size: 50%;
+}
+#page-header .views-field-field-image {
+  margin-top: 100px;
+}
+#page-header .views-field-field-image img {
+  width: 100%;
+}
+  
+.person, .episode {
+  margin: 0;
+  padding: 0 30px 20px 0;
+  background: black;
+  color: white;
+  border-top: solid 1px #999;
+}
+.person:first-child, .episode:first-child {
+  border-top: none;
+}
+.person .image, .episode .image {
+  width: 25%;
+  float: left;
+}
+.person .image img, .episode .image img {
+  max-width: 100%;
+}
+.person .details, .episode .details {
+  float: right;
+  width: 73%;
+  padding: 20px 0 0 0;
+}
+.person .name {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+section h2.title {
+  background-color: #0c7c92;
+  padding: 10px;
+  color: white;
+  font-size: 130%;
+  text-transform: capitalize;
+}
+
+section.agency-contact {
+  background-image: url(images/symphony-hall-footer.jpg);
+}
+
+section#contact {
+  border-top: solid 3px black;
+  margin-top: 30px;
+}
