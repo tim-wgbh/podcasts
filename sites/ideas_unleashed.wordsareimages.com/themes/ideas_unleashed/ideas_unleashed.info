@@ -1,0 +1,43 @@
+name = Ideas Unleashed
+description = This one page Drupal theme is based on Start Bootstrap Agency Template. http://ironsummitmedia.github.io/startbootstrap-agency/
+core = 7.x
+base theme = bootstrap_agency
+
+;; settings[bootstrap_navbar_position] = 'fixed-top'
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;;
+
+regions[navigation]     = 'Navigation'
+regions[header]         = 'Page splash'
+regions[highlighted]    = 'Highlighted'
+regions[help]           = 'Help'
+regions[content]        = 'Content'
+regions[sidebar_first]  = 'Primary'
+regions[sidebar_second] = 'Secondary'
+regions[footerl]        = 'Footer left'
+regions[footerc]        = 'Footer center'
+regions[footerr]        = 'Footer right'
+regions[page_top]       = 'Page top'
+regions[page_bottom]    = 'Page bottom'
+regions[contact]        = 'Contact'
+
+; Breakpoints
+breakpoints[wide] = (min-width: 1220px)
+breakpoints[normal] = (min-width: 980px)
+breakpoints[narrow] = (min-width: 740px)
+breakpoints[mobile] = (min-width: 0px)
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Stylesheets
+;;;;;;;;;;;;;;;;;;;;;
+
+stylesheets[all][] = glyphicons.css
+stylesheets[all][] = fonts.css
+stylesheets[all][] = iu_style.css
+
+version = "7.x-1.0"
+core = "7.x"
+project = "ideas_unleashed"
+

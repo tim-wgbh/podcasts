@@ -1,27 +1,41 @@
+/**
+ * main color: purple - #820798
+ * accent color: sunflower - #EDD50C
+ *
+ */
+
 body {
-  font-family: cooper_hewittbook;
-  background-color: #fff;
+  font-family: ambleregular;
+  background: #fff;
   font-size: 16px;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: cooper_hewittsemibold;
+  font-family: ambleregular;
+  font-weight: normal;
+  font-size: 200%;
+}
+h2.title {
+  margin-bottom: 0;
 }
 a, a:visited {
-  color: #ED1C27;
+  color: #666;
 }
-.c-h-logo {
-  background-color: #fff;
+a:hover {
+  color: #EDD50C;
+}
+.logo {
   position: fixed;
+  padding: 10px 0;
   width: 100%;
   text-align:center;
-  padding: 5px 0 10px;
   z-index: 100;
   min-height: 100px;
-  box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+  background-color: #f2730c;
+  border-bottom: solid 4px #EDD50C;
+  box-shadow: 0 3px 3px rgba(0,0,0,0.8);
 }
 .c-h-logo img {
   max-width: 650px;
-  width: 75%;
 }
 .c-h-logo span {
   position: absolute;
@@ -58,8 +72,8 @@ a, a:visited {
 .episode .audio-control {
   position: absolute;
   z-index: 95;
-  left:15%;
-  top: 15%;
+  left:5px;
+  top: 5px;
   height: 63px;
   width: 68px;
 }
@@ -116,33 +130,31 @@ header#page-header .region {
 }
 header#page-header .region .content {
   text-transform: none;
-  font-family: cooper_hewittsemibold;
   margin-bottom: 0;
   border-bottom: solid 3px black;
 }
 #page-header .views-field-body {
   position: absolute;
-  right: 15%;
-  top: 35%;
-  color: rgb(250,254,220);
-  background-color: rgba(64,64,64, 0.8);
-  /*
-  color: #333;
-  background-color: rgba(250,254,220, 0.8);
-  */
+  left: 5%;
+  bottom: 5%;
+  font-weight: normal;
+  color: #EDD50C;
+  background-color: #222;
   width: 60%;
   z-index: 20;
   text-align: left;
   padding: 10px;
   border-radius: 3px;
+  font
 }
 #page-header .views-field-title {
   position: absolute;
-  left: 7%;
-  top: 20%;
-  color: #F9FE6E;
+  right: 10%;
+  top: 15%;
+  color: #EDD50C;
+  text-shadow: 1px 1px 0px rgb(0,0,0);
   z-index: 20;
-  font-size: 50%;
+  font-size: 80%;
 }
 #page-header .views-field-field-image {
   margin-top: 100px;
@@ -151,36 +163,43 @@ header#page-header .region .content {
   width: 100%;
 }
   
-.person {
-  padding: 30px 0;
-  min-height: 270px;
+.person, .episode {
+  margin: 0;
+  padding: 0 30px 20px 0;
+  background-color: #222;
+  color: white;
+  border-top: solid 1px #999;
 }
-.person .image {
+.person:first-child, .episode:first-child {
+  border-top: none;
+}
+.person .image, .episode .image {
   width: 25%;
   float: left;
 }
-.person .image img {
+.person .image img, .episode .image img {
   max-width: 100%;
 }
-.person .details {
+.person .details, .episode .details {
   float: right;
   width: 73%;
-  padding-left: 1%;
+  padding: 20px 0 0 0;
 }
 .person .name {
   font-weight: bold;
   font-size: 1.2em;
 }
 section h2.title {
-  background-color: #E02432;
+  background-color: #f2730c;
   padding: 10px;
   color: white;
   font-size: 130%;
+  text-transform: capitalize;
 }
 
 section.agency-contact {
   background-image: none;
-  background-color: #ccc;
+  background-color: #444;
 }
 
 section#contact {

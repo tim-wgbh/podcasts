@@ -45,6 +45,9 @@ a:hover {
   cursor: pointer;
   background: transparent;
 }
+.copyright {
+  color: white;
+}
 .episode {
   position:relative;
   margin-top: 30px;
@@ -61,21 +64,21 @@ a:hover {
 }
 .episode .audio-player iframe {
   width: 100%;
-}
-  
+} 
 .episode .audio-control {
   position: absolute;
   z-index: 95;
-  left:15%;
-  height: 60px;
-  width: 60px;
+  left:5%;
+  top: 15%;
+  height: 63px;
+  width: 68px;
 }
 .episode .audio-control.listen {
   background: url(images/audio-control.png) no-repeat -75px 0;
   cursor: pointer;
 }
 .episode .audio-control.not-yet {
-  background: url(images/audio-control.png) no-repeat -225px 0;
+  background: url(images/audio-control.png) no-repeat -223px 0;
   cursor: normal;
 }
 .episode .audio-control.hide-audio {
