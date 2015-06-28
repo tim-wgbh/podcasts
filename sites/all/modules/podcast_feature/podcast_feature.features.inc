@@ -30,6 +30,63 @@ function podcast_feature_views_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_fe_nodequeue_export_fields().
+ */
+function podcast_feature_fe_nodequeue_export_fields() {
+  $nodequeues = array();
+
+  // Exported nodequeues: people
+  $nodequeues['people'] = array(
+    'name' => 'people',
+    'title' => 'People',
+    'subqueue_title' => '',
+    'size' => 8,
+    'link' => 'Add a person',
+    'link_remove' => 'Remove this person',
+    'owner' => 'nodequeue',
+    'show_in_ui' => 1,
+    'show_in_tab' => 1,
+    'show_in_links' => 1,
+    'reference' => 0,
+    'reverse' => 0,
+    'insert_at_front' => 0,
+    'i18n' => 0,
+    'subqueues' => 1,
+    'types' => array(
+      0 => 'person',
+    ),
+    'roles' => array(),
+    'count' => 0,
+  );
+
+  // Exported nodequeues: podcast_series
+  $nodequeues['podcast_series'] = array(
+    'name' => 'podcast_series',
+    'title' => 'Podcast Series',
+    'subqueue_title' => '',
+    'size' => 0,
+    'link' => 'Add a podcast series',
+    'link_remove' => 'Remove this podcast series',
+    'owner' => 'nodequeue',
+    'show_in_ui' => 1,
+    'show_in_tab' => 1,
+    'show_in_links' => 1,
+    'reference' => 0,
+    'reverse' => 1,
+    'insert_at_front' => 1,
+    'i18n' => 0,
+    'subqueues' => 1,
+    'types' => array(
+      0 => 'series',
+    ),
+    'roles' => array(),
+    'count' => 0,
+  );
+
+  return $nodequeues;
+}
+
+/**
  * Implements hook_image_default_styles().
  */
 function podcast_feature_image_default_styles() {
