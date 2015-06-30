@@ -73,6 +73,16 @@
  * @ingroup themeable
  */
 ?>
+<?php if (!$admin_page): ?>
+  <div class="wgbh-links">
+    <ul class="menu">
+      <li><a href="http://www.wgbh.org" title="WGBH.org"  class="image"><img src="/sites/all/wgbh_links/wgbh_mini_logo.png" alt="WGBH" /></a>
+      <li><a href="http://www.wgbh.org/donateButton" title="Donate to WGBH"  class="donate">Donate</a></li>
+      <li><a href="http://www.wgbh.org/support" title="Find out all the ways to support WGBH">Support</a></li>
+      <li><a href="http://www.wgbh.org/mywgbh" title="Got to myWGBH">MyWGBH</a></li>
+    </ul>
+  </div>      
+<?php endif; ?>
 <header class="c-h-logo">
   <img src="/sites/caught.wordsareimages.com/themes/caught/images/banner-logo.jpg" />
 </header>
@@ -95,13 +105,6 @@
   </section>
   <div class="clearfix"></div>
 
-  <section id="contact" class="agency-contact container-fluid">
-    <div class="container">
-      <?php if (!empty($page['contact'])): ?>
-        <?php print render($page['contact']); ?>
-      <?php endif; ?>
-    </div>
-  </section>
 </div>
 <footer class="footer container">
   <div class="row">
