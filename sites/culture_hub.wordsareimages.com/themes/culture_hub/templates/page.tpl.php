@@ -73,6 +73,17 @@
  * @ingroup themeable
  */
 ?>
+<?php if (!$admin_page): ?>
+  <div class="wgbh-links">
+    <ul class="menu">
+      <li><a href="http://www.wgbh.org" title="WGBH.org"  class="image"><img src="/sites/all/wgbh_links/wgbh_mini_logo.png" alt="WGBH" /></a>
+      <li><a href="http://www.wgbh.org/donateButton" title="Donate to WGBH"  class="donate">Donate</a></li>
+      <li><a href="http://www.wgbh.org/support" title="Find out all the ways to support WGBH">Support</a></li>
+      <li><a href="http://www.wgbh.org/mywgbh" title="Got to myWGBH">MyWGBH</a></li>
+    </ul>
+  </div>      
+<?php endif; ?>
+
 <header class="c-h-logo">
   <img src="/sites/culture_hub.wordsareimages.com/themes/culture_hub/images/culture_hub_banner.png" />
 </header>
@@ -97,13 +108,6 @@
   <iframe src='//cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=1XMgE8xiCG8f-J33uE5HOQYAVxO0pKlgF4-xsAkF-tJU&font=Bevan-PotanoSans&maptype=toner&lang=en&height=650' width='100%' height='650' frameborder='0'></iframe>
 </section>
 
-<section id="contact" class="agency-contact container-fluid">
-  <div class="container">
-    <?php if (!empty($page['contact'])): ?>
-      <?php print render($page['contact']); ?>
-    <?php endif; ?>
-  </div>
-</section>
 <footer class="footer container">
   <div class="row">
     <div class="col-md-4">

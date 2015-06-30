@@ -7,6 +7,11 @@ h1, h2, h3, h4, h5, h6 {
 a, a:visited {
   color: #ED1C27;
 }
+p {
+  font-family: cooper_hewittbook;
+  font-weight: normal;
+  font-size: 18px;
+}
 .c-h-logo {
   background-color: #000;
   position: fixed;
@@ -142,8 +147,8 @@ header#page-header .region .content {
 }
 #page-header .views-field-body {
   position: absolute;
-  right: 15%;
-  top: 35%;
+  right: 5%;
+  top: 45%;
   color: rgb(250,254,220);
   background-color: rgba(64,64,64, 0.8);
   /*
@@ -158,11 +163,11 @@ header#page-header .region .content {
 }
 #page-header .views-field-title {
   position: absolute;
-  left: 7%;
+  right: 5%;
   top: 20%;
   color: #F9FE6E;
   z-index: 20;
-  font-size: 50%;
+  font-size: 70%;
 }
 #page-header .views-field-field-image {
   margin-top: 100px;
