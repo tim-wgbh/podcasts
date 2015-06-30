@@ -5,12 +5,12 @@
  */
 
 body {
-  font-family: ambleregular;
+  font-family: sinkin_light;
   background: #fff;
   font-size: 16px;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: ambleregular;
+  font-family: sinkin_bold;
   font-weight: normal;
   font-size: 200%;
 }
@@ -23,6 +23,9 @@ a, a:visited {
 a:hover {
   color: #EDD50C;
 }
+p {
+  font-family: sinkin_light;
+}
 .logo {
   position: fixed;
   padding: 10px 0;
@@ -31,7 +34,6 @@ a:hover {
   z-index: 100;
   min-height: 100px;
   background-color: #f2730c;
-  border-bottom: solid 4px #EDD50C;
   box-shadow: 0 3px 3px rgba(0,0,0,0.8);
 }
 .c-h-logo img {
@@ -135,9 +137,8 @@ header#page-header .region .content {
 }
 #page-header .views-field-body {
   position: absolute;
-  left: 5%;
-  bottom: 5%;
-  font-weight: normal;
+  right: 5%;
+  bottom: 15%;
   color: #EDD50C;
   background-color: #222;
   width: 60%;
@@ -148,8 +149,9 @@ header#page-header .region .content {
   font
 }
 #page-header .views-field-title {
+  font-family: sinkin_bold;
   position: absolute;
-  right: 10%;
+  right: 5%;
   top: 15%;
   color: #EDD50C;
   text-shadow: 1px 1px 0px rgb(0,0,0);
