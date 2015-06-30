@@ -110,7 +110,7 @@ function podcast_feature_views_default_views() {
   $handler->display->display_options['filters']['field_episode_season_nid']['table'] = 'field_data_field_episode_season';
   $handler->display->display_options['filters']['field_episode_season_nid']['field'] = 'field_episode_season_nid';
   $handler->display->display_options['filters']['field_episode_season_nid']['value'] = array(
-    12 => '12',
+    1 => '1',
   );
 
   /* Display: Season - 6 episodes */

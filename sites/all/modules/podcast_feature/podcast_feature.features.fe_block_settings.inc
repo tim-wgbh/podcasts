@@ -27,16 +27,10 @@ function podcast_feature_default_fe_block_settings() {
         'theme' => 'bartik',
         'weight' => 0,
       ),
-      'bootstrap_agency' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'bootstrap_agency',
-        'weight' => 0,
-      ),
-      'culture_hub' => array(
+      'ideas_unleashed' => array(
         'region' => 'footerc',
         'status' => 1,
-        'theme' => 'culture_hub',
+        'theme' => 'ideas_unleashed',
         'weight' => 0,
       ),
       'seven' => array(
