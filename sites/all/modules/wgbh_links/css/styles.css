@@ -2,11 +2,11 @@
   height: 47px;
   background-color:#333;
   position:fixed;
-  top: 0;
+  top: -47px;
   left: 0;
   font-family: Helvetica, Arial, sans-serif;
   width: 100%;
-  z-index: 2000;
+  z-index: 500;
   padding: 7px 0;
   line-height: 0;
 }
