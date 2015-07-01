@@ -220,8 +220,13 @@ header#page-header .region .content {
 section {
   border-top: solid 3px black;
 }
-section.agency-contact {
-  background-image: url(images/boston_map.jpg);
+section#map {
+  background-color:#000;
+  text-align: center;
+  padding: 20px;
+}
+section#map iframe {
+  margin: 0 auto;
 }
 section#people {
   border-top: solid 3px black;

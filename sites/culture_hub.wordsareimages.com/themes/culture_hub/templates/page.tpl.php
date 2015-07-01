@@ -97,6 +97,10 @@
   <iframe src='//cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=1XMgE8xiCG8f-J33uE5HOQYAVxO0pKlgF4-xsAkF-tJU&font=Bevan-PotanoSans&maptype=toner&lang=en&height=650' width='100%' height='650' frameborder='0'></iframe>
 </section>
 
+<section id="map">
+  <iframe src="https://www.google.com/maps/d/embed?mid=z-iKxTxiWhyM.knJuqSjWM_JI" width="640" height="480"></iframe>
+</section>
+
 <footer class="footer container">
   <div class="row">
     <div class="col-md-4">
