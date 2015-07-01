@@ -38,6 +38,7 @@ dependencies[] = shortcut
 dependencies[] = text
 dependencies[] = views
 dependencies[] = views_ui
+dependencies[] = wgbh_links
 features[breakpoint_group][] = culture_podcast
 features[breakpoints][] = breakpoints.theme.culture_podcast.mobile
 features[breakpoints][] = breakpoints.theme.culture_podcast.narrow
