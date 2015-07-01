@@ -73,16 +73,6 @@
  * @ingroup themeable
  */
 ?>
-<?php if (!$admin_page): ?>
-  <div class="wgbh-links">
-    <ul class="menu">
-      <li><a href="http://www.wgbh.org" title="WGBH.org"  class="image"><img src="/sites/all/wgbh_links/wgbh_mini_logo.png" alt="WGBH" /></a>
-      <li><a href="http://www.wgbh.org/donateButton" title="Donate to WGBH"  class="donate">Donate</a></li>
-      <li><a href="http://www.wgbh.org/support" title="Find out all the ways to support WGBH">Support</a></li>
-      <li><a href="http://www.wgbh.org/mywgbh" title="Got to myWGBH">MyWGBH</a></li>
-    </ul>
-  </div>      
-<?php endif; ?>
 
 <header class="c-h-logo">
   <img src="/sites/culture_hub.wordsareimages.com/themes/culture_hub/images/culture_hub_banner.png" />
@@ -91,7 +81,6 @@
 <header role="banner" id="page-header">
   <?php print render($page['header']); ?>
 </header> <!-- /#page-header -->
-
 <section id="episodes">
   <?php print views_embed_view('episodes', 'podcast_episodes'); ?>
   <div class="clearfix"></div>

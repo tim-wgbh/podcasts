@@ -137,22 +137,20 @@ header#page-header .region .content {
 }
 #page-header .views-field-body {
   position: absolute;
-  right: 5%;
-  bottom: 15%;
+  top: 45%;
   color: #EDD50C;
-  background-color: #222;
-  width: 60%;
+  background-color: rgba(51,51,51, 0.7);
   z-index: 20;
-  text-align: left;
-  padding: 10px;
+  text-align: center;
+  padding: 20px 10%;
   border-radius: 3px;
   font
 }
 #page-header .views-field-title {
   font-family: sinkin_bold;
   position: absolute;
-  right: 5%;
-  top: 15%;
+  width: 100%;
+  top: 30%;
   color: #EDD50C;
   text-shadow: 1px 1px 0px rgb(0,0,0);
   z-index: 20;

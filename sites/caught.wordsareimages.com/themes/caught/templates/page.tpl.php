@@ -73,16 +73,7 @@
  * @ingroup themeable
  */
 ?>
-<?php if (!$admin_page): ?>
-  <div class="wgbh-links">
-    <ul class="menu">
-      <li><a href="http://www.wgbh.org" title="WGBH.org"  class="image"><img src="/sites/all/wgbh_links/wgbh_mini_logo.png" alt="WGBH" /></a>
-      <li><a href="http://www.wgbh.org/donateButton" title="Donate to WGBH"  class="donate">Donate</a></li>
-      <li><a href="http://www.wgbh.org/support" title="Find out all the ways to support WGBH">Support</a></li>
-      <li><a href="http://www.wgbh.org/mywgbh" title="Got to myWGBH">MyWGBH</a></li>
-    </ul>
-  </div>      
-<?php endif; ?>
+
 <header class="c-h-logo">
   <img src="/sites/caught.wordsareimages.com/themes/caught/images/banner-logo.jpg" />
 </header>
@@ -119,3 +110,25 @@
     </div>
   </div>
 </footer>
+<?php if (current_path() == 'user'): ?>
+<section id="user-management" class="container">
+  <div class="row">
+    <?php print render($title_prefix); ?>
+    <?php if (!empty($title) && !drupal_is_front_page()): ?>
+      <h1 class="page-header"><?php print $title; ?></h1>
+    <?php endif; ?>
+    <?php print render($title_suffix); ?>
+    <?php print $messages; ?>
+    <?php if (!empty($tabs)): ?>
+      <?php print render($tabs); ?>
+    <?php endif; ?>
+    <?php if (!empty($page['help'])): ?>
+      <?php print render($page['help']); ?>
+    <?php endif; ?>
+    <?php if (!empty($action_links)): ?>
+      <ul class="action-links"><?php print render($action_links); ?></ul>
+    <?php endif; ?>
+    <?php print render($page['content']); ?>
+  </div>
+</section>
+<?php endif; ?>
