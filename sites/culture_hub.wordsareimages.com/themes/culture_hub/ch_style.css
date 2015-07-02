@@ -191,14 +191,6 @@ header#page-header .region .content {
   height: 100%;
 }
 .person .bio {
-  text-align: right;
-  width: 80%;
-  position: absolute;
-  bottom: 3%;
-  right: -2px;
-  background-color: rgba(255,255,255, 0.7);
-  padding: 3px 0 3px 5px;
-  z-index: 60;
   display: none;
 }
 .person .name {
@@ -237,21 +229,21 @@ section#people .featured {
 section#people .featured .name {
   position: absolute;
   right:70%;
-  top: 20%;
+  top: 15%;
   font-size: 1.3em;  
   font-weight: bold;
   color: #ED1C27;
 }
 section#people .featured .bio {
   position: absolute;
-  font-size: 0.7em;
   color: #666;
   width: 10%;
   right:70%;
-  top: 30%;
+  top: 25%;
   text-align: right;
 }
 section#people .featured .bio p {
+  font-size: 15px;
   line-height: 1.25;
 }
 section#timeline {
